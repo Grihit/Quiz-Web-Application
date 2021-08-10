@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q9</title>
+<link rel="stylesheet" href="Q9.css">
+<script src="Q9.js"></script>
+</head>
+<body>
+    <div class="start" id="start">
+        <p class="squiz">QUIZ</p>
+        <hr>
+        <ul><h2>Rules</h2>
+            <li>The quiz is of the type <b>MCQ</b></li>
+            <li>Every question has only <b>ONE</b> correct answer</li>
+            <li>You cannot go back to the previous question</li>
+            <li>You have <b>30</b> seconds for each question</li>
+            <li>Number of questions are <b>5</b></li>
+        </ul>
+        <button class="button" onclick="start();">START</button>
+    </div>
+    <div class="box" id="box">
+        <span class="before">Time left: <span id="countdown"></span></span>
+        <p id="ques"></p>
+        <span>a.</span><input type="radio" id="a" name="quiz" value="a"><span>
+        <label for="a" id="la"></label></span><br>
+        <span>b.</span><input type="radio" id="b" name="quiz" value="b"><span>
+        <label for="b" id="lb"></label></span><br>
+        <span>c.</span><input type="radio" id="c" name="quiz" value="c"><span>
+        <label for="c" id="lc"></label></span><br>
+        <span>d.</span><input type="radio" id="d" name="quiz" value="d"><span>
+        <label for="d" id="ld"></label></span><br><br>
+        <button class="button" id="next" style="margin-left: 80%;" onclick="button_click();">Next</button>
+    </div>
+</body>
+</html>
